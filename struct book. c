@@ -1,0 +1,17 @@
+//user input
+#include<stdio.h>
+#include<string.h>
+struct book{
+        char title[20];
+        char author[40];
+        int price;    
+};
+void main(){
+        struct book b1 ;
+        strcpy(b1.author,"vishavas nagre patil");        
+        strcpy(b1.title,"man me he vishavas");
+        b1.price=300;
+        printf("tittle:%s\n",b1.title);
+        printf("author:%s\n",b1.author);
+        printf("price:%d\n",b1.price);
+}
