@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+typedef struct point{ //alias is 2 values at one point
+        int x;
+        int y;
+
+}coordinate;
+int main(){
+        coordinate p1={20,50};
+        printf("point:%d %d\n",p1.x,p1.y);
+        return 0;
+
+}
