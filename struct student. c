@@ -1,0 +1,12 @@
+//intillaization
+#include<stdio.h>
+
+struct student{
+        char name[10];
+        int roll_no;
+        float marks;                                                                         
+}s1;
+void main(){
+    struct student s1={"Mansi",54,92.5};
+    printf("name:%s\n,roll_no:%d\n,marks:%.1f\n",s1.name,s1.roll_no,s1.marks);
+}
