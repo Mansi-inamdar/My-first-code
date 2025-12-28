@@ -1,0 +1,27 @@
+//array of structure
+#include<stdio.h>
+#include<string.h>
+typedef struct{
+        char model[30];
+        int year;
+
+}car;
+int main(){
+        car c[3];
+        int i;
+        for(i=0;i<3;i++){
+            printf("\nenter car details of car:%d\n",i+1);
+            printf("model name:");
+            scanf("%s",c[i].model);//model is array of characters.//so,in c,array name itself represent the address of first element. 
+             printf("year:");
+            scanf("%d",&c[i].year);
+        }printf("\ncar details:\n");
+        for(i=0;i<3;i++){
+            printf("\ncar %d",i+1);
+            printf("\nmodel %s",c[i].model);
+             printf("\nyear %d",c[i].year);
+        }
+
+return 0;
+
+}
