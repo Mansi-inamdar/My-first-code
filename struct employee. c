@@ -1,0 +1,17 @@
+//coping structure
+#include<stdio.h>
+#include<string.h>
+struct employee{
+        char id[10];
+        int salary;
+        
+
+}e1;
+void main(){
+        struct employee e1={"6689",50000};  //6689 is in double quotes becase of data type
+                                             //we store 6689 in char not in int
+        struct employee e2={"6689",50000};                 //character array store a string, not a number.
+        e1=e2;
+        printf("id:%s\n,salary:%d\n",e2.id,e2.salary);
+
+}
