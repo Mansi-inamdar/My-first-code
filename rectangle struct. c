@@ -1,0 +1,14 @@
+include<stdio.h>
+#include<string.h>
+struct rectangle{
+     int length;
+     int width;
+};
+void main(){
+     struct rectangle r;
+     r.length=2;
+     r.width=4;
+     int area=r.length*r.width;
+     printf("area:%d",area);
+     
+}
